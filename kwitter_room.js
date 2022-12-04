@@ -40,3 +40,10 @@ function redirectoroomname(name)
       localStorage.setItem("roomname",name);
       window.location="kwitter_page.html";
 }
+
+function logout()
+{
+      localStorage.removeItem("roomname");
+      localStorage.removeItem("username");
+      window.location="index.html";
+}
